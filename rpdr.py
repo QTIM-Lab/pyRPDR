@@ -1,6 +1,7 @@
 # rpdr.py
 
-
+# bb
+import pdb
 
 # add working directory to search path
 import os
@@ -42,6 +43,7 @@ class Dataset:
         self.dbPath = os.path.join( self.dir, '%s.sqlite' % dbName )
 
         # search for RPDR text files
+        # pdb.set_trace()
         self.tables = self.findTables(self.dir)
         if len(self.tables) < 1:
             print "Warning! No RPDR files found in given directory: %s" % self.dir

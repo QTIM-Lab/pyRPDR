@@ -6,7 +6,7 @@ import rpdr
 
 
 # instantiate RPDR dataset
-rpdrDir = "/path/to/directory/containing/RPDR/text/files"
+rpdrDir = "/home/bbearce/Documents/Breast_Density/"
 ds = rpdr.Dataset( rpdrDir )
 
 

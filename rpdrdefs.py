@@ -195,6 +195,18 @@ Con = Table(
             dateReformat =  None
         ),
         TableColumn(
+            name =          "EPIC_PMRN",
+            type =          "TEXT",
+            primaryKey =    False,
+            index =         True,
+            unique =        False,
+            notNull =       True,
+            foreignKeyRef = None,
+            timelineDate =  False,
+            timelineBlurb = False,
+            dateReformat =  None
+        ),
+        TableColumn(
             name =          "MRN_Type",
             type =          "TEXT",
             primaryKey =    False,
@@ -244,6 +256,18 @@ Con = Table(
         ),
         TableColumn(
             name =          "Middle_Name",
+            type =          "TEXT",
+            primaryKey =    False,
+            index =         False,
+            unique =        False,
+            notNull =       False,
+            foreignKeyRef = None,
+            timelineDate =  False,
+            timelineBlurb = False,
+            dateReformat =  None
+        ),
+        TableColumn(
+            name =          "Direct_Contact_Consent",
             type =          "TEXT",
             primaryKey =    False,
             index =         False,
@@ -476,6 +500,18 @@ Dem = Table(
             name =          "EMPI",
             type =          "TEXT",
             primaryKey =    True,
+            index =         False,
+            unique =        True,
+            notNull =       True,
+            foreignKeyRef = None,
+            timelineDate =  False,
+            timelineBlurb = False,
+            dateReformat =  None
+        ),
+        TableColumn(
+            name =          "EPIC_PMRN",
+            type =          "TEXT",
+            primaryKey =    False,
             index =         False,
             unique =        True,
             notNull =       True,
@@ -3347,6 +3383,18 @@ Mrn = Table(
             dateReformat =  None
         ),
         TableColumn(
+            name =          "EPIC_PMRN",
+            type =          "TEXT",
+            primaryKey =    False,
+            index =         True,
+            unique =        False,
+            notNull =       True,
+            foreignKeyRef = None,
+            timelineDate =  False,
+            timelineBlurb = False,
+            dateReformat =  None
+        ),
+        TableColumn(
             name =          "MGH_MRN",
             type =          "TEXT",
             primaryKey =    False,
@@ -3420,6 +3468,18 @@ Mrn = Table(
         ),
         TableColumn(
             name =          "MCL_MRN",
+            type =          "TEXT",
+            primaryKey =    False,
+            index =         False,
+            unique =        False,
+            notNull =       False,
+            foreignKeyRef = None,
+            timelineDate =  False,
+            timelineBlurb = False,
+            dateReformat =  None
+        ),
+        TableColumn(
+            name =          "MEE_MRN",
             type =          "TEXT",
             primaryKey =    False,
             index =         False,
@@ -4611,6 +4671,18 @@ Rad = Table(
             dateReformat =  None
         ),
         TableColumn(
+            name =          "EPIC_PMRN",
+            type =          "TEXT",
+            primaryKey =    False,
+            index =         True,
+            unique =        False,
+            notNull =       True,
+            foreignKeyRef = None,
+            timelineDate =  False,
+            timelineBlurb = False,
+            dateReformat =  None
+        ),
+        TableColumn(
             name =          "MRN_Type",
             type =          "TEXT",
             primaryKey =    False,
@@ -4646,18 +4718,18 @@ Rad = Table(
             timelineBlurb = False,
             dateReformat =  None
         ),
-        TableColumn(
-            name =          "MID",
-            type =          "TEXT",
-            primaryKey =    False,
-            index =         False,
-            unique =        False,
-            notNull =       True,
-            foreignKeyRef = None,
-            timelineDate =  False,
-            timelineBlurb = False,
-            dateReformat =  None
-        ),
+        # TableColumn(
+        #     name =          "MID",
+        #     type =          "TEXT",
+        #     primaryKey =    False,
+        #     index =         False,
+        #     unique =        False,
+        #     notNull =       True,
+        #     foreignKeyRef = None,
+        #     timelineDate =  False,
+        #     timelineBlurb = False,
+        #     dateReformat =  None
+        # ),
         TableColumn(
             name =          "Report_Date_Time",
             type =          "DATETIME",
@@ -4739,6 +4811,18 @@ Rdt = Table(
             index =         True,
             unique =        False,
             notNull =       True,
+            foreignKeyRef = None,
+            timelineDate =  False,
+            timelineBlurb = False,
+            dateReformat =  None
+        ),
+        TableColumn(
+            name =          "EPIC_PMRN",
+            type =          "TEXT",
+            primaryKey =    False,
+            index =         False,
+            unique =        False,
+            notNull =       False,
             foreignKeyRef = None,
             timelineDate =  False,
             timelineBlurb = False,
