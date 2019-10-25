@@ -12,9 +12,9 @@ Thumbs.db
 #################
 *.pyc
 *.sqlite
+.vscode
 
 # virtual environment #
 #######################
-
 venv
 
